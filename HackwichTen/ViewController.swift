@@ -25,6 +25,8 @@ class ViewController: UIViewController {
         
         //Text for the label
         myLabel.text = "Index One selected on the Segmented Control"
+        //Makes it so no indexes are selected when the app launches
+        segmentedControl.selectedSegmentIndex = -1
         
         
     }
@@ -41,6 +43,10 @@ class ViewController: UIViewController {
             
         case 1:
             myLabel.text = "Index Two selected. I got this!"
+            
+        case 2:
+            myLabel.text = "Woohoo, this makes sense now."
+
 
             
         default:
