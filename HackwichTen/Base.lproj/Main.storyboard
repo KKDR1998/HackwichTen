@@ -51,6 +51,7 @@
                     <connections>
                         <outlet property="myLabel" destination="3vk-rb-bxF" id="1A3-R3-79V"/>
                         <outlet property="segmentedControl" destination="kxX-8G-cqh" id="Hxa-K7-WTg"/>
+                        <outlet property="textField" destination="LQD-Iz-B5t" id="IfR-PQ-TOb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

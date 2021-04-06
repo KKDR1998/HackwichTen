@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var myLabel: UILabel!
     
+    
+    @IBOutlet weak var textField: UITextField!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +27,7 @@ class ViewController: UIViewController {
        //Sets up the inital conditions for the app launch
         
         //Text for the label
-        myLabel.text = "Index One selected on the Segmented Control"
+        myLabel.text = ""
         //Makes it so no indexes are selected when the app launches
         segmentedControl.selectedSegmentIndex = -1
         
@@ -33,19 +36,22 @@ class ViewController: UIViewController {
     
     
     @IBAction func segmentedControlPressed(_ sender: Any) {
-    //switch statement
+        let userInputText = textField.text
+        
+        //switch statement
+       
         switch
             segmentedControl
                 .selectedSegmentIndex {
             //creating diferent segments and what they do
         case 0:
-            myLabel.text = "Index One selected on the Segmented Control"
+            myLabel.text = userInputText
             
         case 1:
-            myLabel.text = "Index Two selected. I got this!"
+            myLabel.text = userInputText
             
         case 2:
-            myLabel.text = "Woohoo, this makes sense now."
+            myLabel.text = userInputText
 
 
             
@@ -53,6 +59,7 @@ class ViewController: UIViewController {
             break
             
         }
+        
     
     
     }
